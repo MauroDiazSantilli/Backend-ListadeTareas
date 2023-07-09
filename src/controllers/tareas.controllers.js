@@ -48,7 +48,7 @@ export const editarTarea = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(404).json({
-      mensaje: "La tarea no pudo ser editada",
+      mensaje: "La tarea no pudo ser actualizada",
     });
   }
 };
