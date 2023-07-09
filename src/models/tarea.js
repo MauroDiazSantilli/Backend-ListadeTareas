@@ -3,7 +3,9 @@ import { Schema, model } from 'mongoose';
 const tareaSchema = new Schema({
   tarea: {
     type: String,
-    required: true,
+    minlength: 2,
+    maxlength: 50,
+    required: true
   },
 });
 
